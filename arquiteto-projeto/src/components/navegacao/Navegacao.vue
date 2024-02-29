@@ -8,7 +8,7 @@
 
         <div class="container-navegacao">
             <v-list class="bg d-flex ">
-                <v-list-item title="HOME"></v-list-item>
+                <v-list-item to="/" title="HOME"></v-list-item>
                 <v-list-item title="BLOG"></v-list-item>
                 <v-list-item title="CONTATO"></v-list-item>
             </v-list>
@@ -21,7 +21,7 @@
         <v-navigation-drawer v-model="isAbrir" location="right" >
             <v-app-bar-nav-icon location="top center" class="bota-aparecer" @click="isAbrir = !isAbrir"></v-app-bar-nav-icon>
             <v-list>
-                <v-list-item title="HOME"></v-list-item>
+                <v-list-item to="/" title="HOME"></v-list-item>
                 <v-list-item title="BLOG"></v-list-item>
                 <v-list-item title="CONTATO"></v-list-item>
             </v-list>
