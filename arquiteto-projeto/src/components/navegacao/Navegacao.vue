@@ -8,15 +8,9 @@
 
         <div class="container-navegacao">
             <v-list class="bg d-flex ">
-                <v-list-item>
-                    <v-list-item-title>Home</v-list-item-title>
-                </v-list-item>
-                <v-list-item>
-                    <v-list-item-title>Blog</v-list-item-title>
-                </v-list-item>
-                <v-list-item>
-                    <v-list-item-title>Contato</v-list-item-title>
-                </v-list-item>
+                <v-list-item title="HOME"></v-list-item>
+                <v-list-item title="BLOG"></v-list-item>
+                <v-list-item title="CONTATO"></v-list-item>
             </v-list>
         </div>
     </v-container>

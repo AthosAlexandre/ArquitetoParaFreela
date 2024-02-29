@@ -4,10 +4,10 @@
         <Navegacao class="porcima"/>
             <v-container class="d-flex flex-column justify-center align-center tamanho-container">
                 <div class="porcima">
-                    <h1>Bem-vindo ao Arquiteto Projeto</h1>
+                    <h1 class="text-h2">Bem-vindo ao Arquiteto Projeto</h1>
                 </div>
                 <div class="porcima">
-                    <h4>O melhor lugar para você encontrar o seu projeto</h4>
+                    <h2 class="text-h5">O melhor lugar para você encontrar o seu projeto</h2>
                 </div>
             </v-container>
     </div>
