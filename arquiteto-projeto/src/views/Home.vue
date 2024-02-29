@@ -1,7 +1,17 @@
 <template>
-  <HelloWorld />
+  <Inicio />
 </template>
 
-<script setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
+<script>
+import Inicio from '@/components/CompHome/C1Inicio/Inicio.vue';
+
+
+export default {
+    name: 'Home',
+    data() {
+        return {};
+    },
+    components: { Inicio }
+}
+  
 </script>
