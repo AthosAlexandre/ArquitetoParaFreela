@@ -1,6 +1,5 @@
 <template>
-    <div class="img-fundo d-flex flex-column 
- align-center">
+    <div class="img-fundo d-flex flex-column align-center">
         <Navegacao class="porcima" />
         <v-container class="d-flex flex-column justify-center align-center tamanho-container">
             <div class="porcima">
@@ -37,6 +36,7 @@ export default {
     height: 90vh;
     width: 100%;
     position: relative;
+    background-attachment: fixed;
 }
 
 .img-fundo::before {
