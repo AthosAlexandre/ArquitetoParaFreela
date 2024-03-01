@@ -33,10 +33,11 @@ export default {
     background-image: url('@/assets/casa-luxo.jpeg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     height: 90vh;
     width: 100%;
     position: relative;
-    background-attachment: fixed;
+    
 }
 
 .img-fundo::before {
