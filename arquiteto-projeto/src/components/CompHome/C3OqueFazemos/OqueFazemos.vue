@@ -1,8 +1,8 @@
 <template>
     <article>
-        <section class="img-top" style="padding: 60px;">
+        <section class="img-top">
             <v-container class="porcima ">
-                <h2 class="text-h4">O que nos fazemos</h2>
+                <h2 class="text-h3">O que nos fazemos</h2>
             </v-container>
         </section>
 
@@ -10,7 +10,9 @@
             <v-container>
                 <v-row class="d-flex justify-center align-center">
                     <v-col v-for="(oqFazemos, i) in arrayOqFazemos" :key="i" cols="auto">
-                        <v-card :variant="oqFazemos" class="mx-auto d-flex flex-column justify-center align-center bordeBox dimencao-card" max-width="344">
+                        <v-card :variant="oqFazemos"
+                            class="mx-auto d-flex flex-column justify-center align-center bordeBox dimencao-card"
+                            max-width="344">
                             <v-card-item>
                                 <div>
                                     <div class="text-overline mb-1 d-flex justify-center">
@@ -35,7 +37,7 @@
                 </v-row>
             </v-container>
         </section>
-        
+
     </article>
 </template>
 
@@ -97,6 +99,7 @@ export default {
     background-attachment: fixed;
     height: 300px;
     position: relative;
+    padding: 60px;
 }
 
 .img-top::before {
@@ -110,30 +113,37 @@ export default {
     bottom: 0;
     z-index: 1;
 }
+
 .porcima {
     z-index: 2;
     position: relative;
     color: white;
 }
 
-.cointainer-cards-oq-fazemos{
+.cointainer-cards-oq-fazemos {
     position: relative;
-    z-index: 2; 
-    margin-top: -150px; 
+    z-index: 2;
+    margin-top: -150px;
 }
 
-.bordeBox{
+.bordeBox {
     border-radius: 5px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     background-color: #cacaca;
 }
 
-.dimencao-card{
+.dimencao-card {
     width: 280px;
     height: 300px;
 }
 
-.iconeMeu{
+.iconeMeu {
     font-size: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .img-top {
+        padding: 40px;
+    }
 }
 </style>

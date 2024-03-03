@@ -1,8 +1,14 @@
 <template>
     <article>
-        <section class="img-portfolio" style="padding: 60px;">
+        <section class="img-portfolio">
             <v-container class="porcima">
-                <h2 class="text-h4">Portfolio</h2>
+                <h2 class="text-h3">Portfolio</h2>
+            </v-container>
+        </section>
+
+        <section class="container-portfolio">
+            <v-container>
+
             </v-container>
         </section>
     </article>
@@ -28,6 +34,7 @@ export default {
     height: 300px;
     position: relative;
     margin-top: 60px;
+    padding: 60px;
 }
 
 .img-portfolio::before {
@@ -46,5 +53,9 @@ export default {
     z-index: 2;
     position: relative;
     color: white;
+}
+
+@media screen and (max-width: 600px){
+   
 }
 </style>
