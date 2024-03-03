@@ -1,6 +1,6 @@
 <template>
     <article>
-        <section class="img-top d-flex" style="padding: 60px;">
+        <section class="img-top" style="padding: 60px;">
             <v-container class="porcima ">
                 <h2 class="text-h4">O que nos fazemos</h2>
             </v-container>
