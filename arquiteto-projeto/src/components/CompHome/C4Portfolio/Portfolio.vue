@@ -7,8 +7,34 @@
         </section>
 
         <section class="container-portfolio">
-            <v-container>
+            <v-container class="d-flex justify-space-around flex-column flex-md-row">
 
+                <section class="container-imgs pa-3">
+                    <v-row class="d-flex align-center">
+                        <v-col v-for="(img, i) in arrayContainerImgs" :key="i" cols="12" :md="img.md">
+                            <v-img :src="img.src" class=""></v-img>
+                        </v-col>
+                    </v-row>
+                </section>
+
+                <section class="container-texto-imgs pa-3">
+                    <div class="container-texto d-flex flex-column justify-center
+                    align-center pa-6">
+                        <h2 class="text-h4">Simples & Claro</h2>
+                        <p class="mt-4">
+                            Nossos projetos são simples e claros, com um toque de modernidade e elegância.
+                        </p>
+                    </div>
+
+                    <div class="container-img mt-6">
+                        <v-row class="d-flex align-center">
+                            <v-col v-for="(img, i) in arrayTextImgs" :key="i" cols="12" :md="img.md">
+                                <v-img :src="img.src" class=""></v-img>
+                            </v-col>
+                        </v-row>
+                    </div>
+
+                </section>
             </v-container>
         </section>
     </article>
@@ -19,7 +45,65 @@ export default {
     name: 'Portfolio',
     data() {
         return {
-
+            arrayContainerImgs: [
+                {
+                    id: 1,
+                    src: '../../../public/sacada.jpg',
+                    md: 4
+                },
+                {
+                    id: 2,
+                    src: '../../../public/sacada.jpg',
+                    md: 4
+                },
+                {
+                    id: 3,
+                    src: '../../../public/sacada.jpg',
+                    md: 4
+                },
+                {
+                    id: 4,
+                    src: '../../../public/sacada.jpg',
+                    md: 6
+                },
+                {
+                    id: 5,
+                    src: '../../../public/sacada.jpg',
+                    md: 6
+                },
+                {
+                    id: 6,
+                    src: '../../../public/sacada.jpg',
+                    md: 12
+                },
+            ],
+            arrayTextImgs: [
+                {
+                    id: 1,
+                    src: '../../../public/sacada.jpg',
+                    md: 6
+                },
+                {
+                    id: 2,
+                    src: '../../../public/sacada.jpg',
+                    md: 6
+                },
+                {
+                    id: 3,
+                    src: '../../../public/sacada.jpg',
+                    md: 4
+                },
+                {
+                    id: 4,
+                    src: '../../../public/sacada.jpg',
+                    md: 4
+                },
+                {
+                    id: 5,
+                    src: '../../../public/sacada.jpg',
+                    md: 4
+                },
+            ]
         }
     }
 }
@@ -55,7 +139,26 @@ export default {
     color: white;
 }
 
-@media screen and (max-width: 600px){
-   
+.container-imgs {
+    width: 50%;
+}
+
+.container-texto-imgs {
+    width: 50%;
+}
+
+.container-texto {
+    height: 350px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.349);
+}
+
+@media screen and (max-width: 960px) {
+    .container-imgs {
+        width: 100%;
+    }
+
+    .container-texto-imgs {
+        width: 100%;
+    }
 }
 </style>
