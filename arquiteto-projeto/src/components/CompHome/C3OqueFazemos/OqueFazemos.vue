@@ -2,7 +2,7 @@
     <article>
         <section class="img-top">
             <v-container class="porcima ">
-                <h2 class="text-h3">O que nos fazemos</h2>
+                <h2 class="text-h3">O QUE NÓS FAZEMOS</h2>
             </v-container>
         </section>
 

@@ -2,7 +2,7 @@
     <article>
         <section class="img-portfolio">
             <v-container class="porcima">
-                <h2 class="text-h3">Portfolio</h2>
+                <h2 class="text-h3">PORTFOLIO</h2>
             </v-container>
         </section>
 
@@ -51,7 +51,7 @@
                     </div>
                 </v-container>
             </v-expand-transition>
-            
+
         </section>
 
         <div class="container-btn d-flex justify-center">
