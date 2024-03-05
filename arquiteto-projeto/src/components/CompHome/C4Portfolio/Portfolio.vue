@@ -23,6 +23,8 @@
                         <h2 class="text-h4">Simples & Claro</h2>
                         <p class="mt-4">
                             Nossos projetos são simples e claros, com um toque de modernidade e elegância.
+                            Nossos projetos são simples e claros, com um toque de modernidade e elegância.
+                            Nossos projetos são simples e claros, com um toque de modernidade e elegância.
                         </p>
                     </div>
 
@@ -37,6 +39,9 @@
                 </section>
             </v-container>
         </section>
+        <div class="container-btn d-flex justify-center">
+            <v-btn>Carregar Mais</v-btn>
+        </div>
     </article>
 </template>
 
