@@ -35,12 +35,27 @@
                             </v-col>
                         </v-row>
                     </div>
-
                 </section>
             </v-container>
+
+            <v-expand-transition>
+                <v-container>
+                    <div v-show="abrirMais">
+                        <div class="container-img">
+                            <v-row class="d-flex align-center">
+                                <v-col v-for="(img, i) in maisImgArray" :key="i" cols="12" :md="img.md">
+                                    <v-img :src="img.src" class=""></v-img>
+                                </v-col>
+                            </v-row>
+                        </div>
+                    </div>
+                </v-container>
+            </v-expand-transition>
+            
         </section>
+
         <div class="container-btn d-flex justify-center">
-            <v-btn>Carregar Mais</v-btn>
+            <v-btn :text="abrirMais ? 'FECHAR' : 'CARREGAR MAIS'" @click="abrirMais = !abrirMais"></v-btn>
         </div>
     </article>
 </template>
@@ -50,6 +65,7 @@ export default {
     name: 'Portfolio',
     data() {
         return {
+            abrirMais: false,
             arrayContainerImgs: [
                 {
                     id: 1,
@@ -107,6 +123,38 @@ export default {
                     id: 5,
                     src: '../../../public/sacada.jpg',
                     md: 4
+                },
+            ],
+            maisImgArray: [
+                {
+                    id: 1,
+                    src: '../../../public/sacada.jpg',
+                    md: 4
+                },
+                {
+                    id: 2,
+                    src: '../../../public/sacada.jpg',
+                    md: 4
+                },
+                {
+                    id: 3,
+                    src: '../../../public/sacada.jpg',
+                    md: 4
+                },
+                {
+                    id: 4,
+                    src: '../../../public/sacada.jpg',
+                    md: 6
+                },
+                {
+                    id: 5,
+                    src: '../../../public/sacada.jpg',
+                    md: 6
+                },
+                {
+                    id: 6,
+                    src: '../../../public/sacada.jpg',
+                    md: 12
                 },
             ]
         }
