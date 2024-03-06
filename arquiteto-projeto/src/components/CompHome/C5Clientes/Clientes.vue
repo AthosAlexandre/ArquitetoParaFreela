@@ -7,8 +7,15 @@
         </section>
 
         <section class="container-clientes">
-            <v-container>
+            <v-container class="">
                 
+                <v-row >
+                    <v-col v-for="(empressa, i) in empresasArray" :key="i" cols="12" md="3" class="d-flex justify-center align-center container-logo-impresa">
+                        <v-icon class="tamanhoIcon" :icon="empressa.icon">  
+                        </v-icon>
+                    </v-col>
+                </v-row>
+
             </v-container>
         </section>
     </article>
@@ -19,7 +26,40 @@
         name: 'Clientes',
         data() {
             return {
-                
+                empresasArray:[
+                    {
+                        id: 1,
+                        icon: 'mdi-apple'
+                    },
+                    {
+                        id:2,
+                        icon: 'mdi-microsoft'
+                    },
+                    {
+                        id:3,
+                        icon: 'mdi-microsoft-xbox'
+                    },
+                    {
+                        id:4,
+                        icon: 'mdi-sony-playstation'
+                    },
+                    {
+                        id:5,
+                        icon: 'mdi-nintendo-switch'
+                    },
+                    {
+                        id:6,
+                        icon: 'mdi-instagram'
+                    },
+                    {
+                        id:7,
+                        icon: 'mdi-youtube'
+                    },
+                    {
+                        id:8,
+                        icon: 'mdi-facebook'
+                    },
+                ]
             }
         }
     }
@@ -53,6 +93,18 @@
     z-index: 2;
     position: relative;
     color: white;
+}
+
+.container-logo-impresa{
+
+    border: 1px solid #b4aeae;
+    padding: 10px;
+    height: 250px;
+}
+
+.tamanhoIcon{
+    font-size: 80px;
+    color: #212020;
 }
 
 </style>
