@@ -55,7 +55,7 @@
         </section>
 
         <div class="container-btn d-flex justify-center">
-            <v-btn :text="abrirMais ? 'FECHAR' : 'CARREGAR MAIS'" @click="abrirMais = !abrirMais"></v-btn>
+            <v-btn class="bg-grey-darken-2" :text="abrirMais ? 'FECHAR' : 'CARREGAR MAIS'" @click="abrirMais = !abrirMais"></v-btn>
         </div>
     </article>
 </template>
