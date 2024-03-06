@@ -97,7 +97,7 @@ export default {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 300px;
+    height: 200px;
     position: relative;
     padding: 60px;
 }
@@ -123,7 +123,7 @@ export default {
 .cointainer-cards-oq-fazemos {
     position: relative;
     z-index: 2;
-    margin-top: -150px;
+    margin-top: -70px;
 }
 
 .bordeBox {
@@ -145,5 +145,8 @@ export default {
     .img-top {
         padding: 40px;
     }
+    .cointainer-cards-oq-fazemos {
+    margin-top: -50px;
+}
 }
 </style>

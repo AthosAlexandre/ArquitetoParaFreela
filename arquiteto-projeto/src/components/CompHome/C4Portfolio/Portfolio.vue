@@ -168,7 +168,7 @@ export default {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 300px;
+    height: 200px;
     position: relative;
     margin-top: 60px;
     padding: 60px;

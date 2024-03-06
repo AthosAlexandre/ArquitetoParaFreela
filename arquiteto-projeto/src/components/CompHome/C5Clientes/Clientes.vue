@@ -7,7 +7,7 @@
         </section>
 
         <section class="container-clientes">
-            <v-container class="">
+            <v-container class="pa-15">
                 
                 <v-row >
                     <v-col v-for="(empressa, i) in empresasArray" :key="i" cols="12" md="3" class="d-flex justify-center align-center container-logo-impresa">
@@ -71,7 +71,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 300px;
+    height: 200px;
     position: relative;
     margin-top: 60px;
     padding: 60px;
