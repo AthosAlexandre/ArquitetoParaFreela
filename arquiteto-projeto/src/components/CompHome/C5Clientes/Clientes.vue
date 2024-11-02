@@ -7,7 +7,7 @@
         </section>
 
         <section class="container-clientes">
-            <v-container class="pa-15">
+            <v-container class="pa-1">
                 
                 <v-row >
                     <v-col v-for="(empressa, i) in empresasArray" :key="i" cols="12" md="3" class="d-flex justify-center align-center container-logo-impresa">

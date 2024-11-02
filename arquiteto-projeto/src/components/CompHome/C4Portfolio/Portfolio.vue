@@ -102,7 +102,7 @@ export default {
                 {
                     id: 1,
                     src: '../../../public/sacada.jpg',
-                    md: 6
+                    md: 6,
                 },
                 {
                     id: 2,
