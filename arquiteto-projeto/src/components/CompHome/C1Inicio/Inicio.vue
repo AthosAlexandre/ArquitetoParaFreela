@@ -1,6 +1,5 @@
 <template>
     <div class="img-fundo d-flex flex-column align-center">
-        <Navegacao class="porcima" />
         <v-container class="d-flex flex-column justify-center align-center tamanho-container">
             <div class="porcima">
                 <h1 class="text-h2">Bem-vindo ao Arquiteto Projeto</h1>
@@ -13,7 +12,6 @@
 </template>
 
 <script>
-import Navegacao from '@/components/navegacao/Navegacao.vue'
 
 export default {
     name: 'Inicio',
@@ -23,7 +21,6 @@ export default {
         }
     },
     components: {
-        Navegacao
     }
 }
 </script>

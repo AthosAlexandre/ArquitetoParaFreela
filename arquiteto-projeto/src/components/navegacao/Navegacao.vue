@@ -8,9 +8,9 @@
 
         <div class="container-navegacao">
             <v-list class="bg d-flex ">
-                <v-list-item to="/" title="HOME"></v-list-item>
-                <v-list-item title="BLOG"></v-list-item>
-                <v-list-item title="CONTATO"></v-list-item>
+                <v-list-item exact to="/" title="HOME"></v-list-item>
+                <v-list-item exact to="/blog" title="BLOG"></v-list-item>
+                <v-list-item exact to="/contato" title="CONTATO"></v-list-item>
             </v-list>
         </div>
 
@@ -21,9 +21,9 @@
         <v-navigation-drawer v-model="isAbrir" location="right" >
             <v-app-bar-nav-icon location="top center" class="bota-aparecer" @click="isAbrir = !isAbrir"></v-app-bar-nav-icon>
             <v-list>
-                <v-list-item to="/" title="HOME"></v-list-item>
-                <v-list-item title="BLOG"></v-list-item>
-                <v-list-item title="CONTATO"></v-list-item>
+                <v-list-item exact to="/" title="HOME"></v-list-item>
+                <v-list-item exact to="/blog" title="BLOG"></v-list-item>
+                <v-list-item exact to="/contato" title="CONTATO"></v-list-item>
             </v-list>
         </v-navigation-drawer>
 
@@ -43,8 +43,7 @@ export default {
 
 <style scoped>
 .bg {
-    background: rgba(21, 21, 21, 0);
-    color: white;
+    color: black;
 }
 
 .bota-aparecer{
